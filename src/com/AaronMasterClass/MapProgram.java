@@ -33,6 +33,23 @@ public class MapProgram {
         }
 
         System.out.println("========================");
+        languajes.remove("BASIC");
+        if (languajes.remove("Algo","algorithmic")){
+            System.out.println("Algo removed");
+        } else{
+            System.out.println("Algo not removed");
+        }
+
+        System.out.println(languajes.replace("Lisp", "Absolutely insane language"));
+        System.out.println(languajes.replace("C++", "this will not be added"));
+
+        System.out.println("=====================");
+        if (languajes.replace("Python","This will not work","machine learning language")){
+            System.out.println("Python value replaced");
+        } else {
+            System.out.println("Python value not replaced");
+        }
+
         for (String key : languajes.keySet()){
             System.out.println(key + " : " + languajes.get(key));
         }
